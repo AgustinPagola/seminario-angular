@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>{{ title }}</h1>
+
+  <div class="games">
+    <div class="game-card" *ngFor="let game of games" (click)="selectGame(game)">
+      <h3>{{ game.name }}</h3>
+      <p>Plataforma: {{ game.platform }}</p>
+      <p>Precio: {{ game.price | currency:'USD' }}</p>
+    </div>
+  </div>
+
+  <app-game-detail *ngIf="selectedGame"
+                   [game]="selectedGame"
+                   [onClose]="clearSelection.bind(this)">
+  </app-game-detail>
+</div>

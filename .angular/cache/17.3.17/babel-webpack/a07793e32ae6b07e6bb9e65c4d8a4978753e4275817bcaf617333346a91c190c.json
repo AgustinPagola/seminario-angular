@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { CatalogoComponent } from './catalogo.component';\nimport { ContactoComponent } from './contacto.component';\nexport const routes = [{\n  path: '',\n  component: CatalogoComponent\n}, {\n  path: 'contacto',\n  component: ContactoComponent\n}];","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

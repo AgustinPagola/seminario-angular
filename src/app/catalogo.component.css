@@ -1,0 +1,45 @@
+.container {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fc;
+  min-height: 100vh;
+}
+h1 {
+  color: #2c3e50;
+}
+.games {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.game-card {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.game-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.details {
+  margin-top: 2rem;
+  background: #eef;
+  padding: 1rem;
+  border-radius: 10px;
+}
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #3498db;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background: #2980b9;
+}
